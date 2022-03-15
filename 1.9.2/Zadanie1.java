@@ -1,13 +1,20 @@
 import java.util.Random;
+import java.util.Arrays;
 class Zadanie1 {
     public static void main(String[]args){
         Random r = new Random();
         int tab[] = new int[2000];
-        for(int i=0;i<2000;i++){
-            int a = r.nextInt(10000)+1;
+        for(int i=0;i<tab.length;i++){
+            int a = r.nextInt(9999)+1;
             tab[i]=a;
-            System.out.println(tab[i]+" ");
         }
-        
+        Arrays.sort(tab);
+        int p = tab.length / 2;
+        System.out.println("Mediana: " + tab[p]);
+        int sum = 0;
+        for(int i = 0; i < tab.length; i++){
+            sum+=tab[i];
+        }
+        System.out.println("Średnia: " + (sum / tab.length));
     }
 }
