@@ -258,8 +258,8 @@ public class JakubDrzala {
         System.out.println("Zdobyłeś :"+p+" punktów");
 
         try {
-            FileWriter fw = new FileWriter(ad);
-            fw.write("Imię: "+imie+" ,Punkty: "+p);
+            FileWriter fw = new FileWriter(ad, true);
+            fw.write("Imię: "+imie+" ,Punkty: "+p+"\n");
             fw.close();
         }
         catch (IOException ex){
