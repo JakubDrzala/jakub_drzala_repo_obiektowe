@@ -11,10 +11,10 @@ class Zadanie2 {
         Arrays.sort(tab);
         int p = tab.length / 2;
         System.out.println("Mediana: " + tab[p]);
-        int sum = 0;
+        int s = 0;
         for(int i = 0; i < tab.length; i++){
-            sum+=tab[i];
+            s+=tab[i];
         }
-        System.out.println("Średnia: " + (sum / tab.length));    
+        System.out.println("Średnia: " + (s / tab.length));    
     }
 }

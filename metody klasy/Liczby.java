@@ -19,7 +19,7 @@ public class Liczby {
         System.out.println("2 - Oblicz pole trójkąta");
         System.out.println("3 - Historia działań");
         Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
+        wybor = sc.nextInt();
         switch(wybor){
             case '1' :
 

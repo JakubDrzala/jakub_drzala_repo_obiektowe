@@ -17,11 +17,11 @@ class Zadanie4 {
             Arrays.sort(tab);
             int p = tab.length / 2;
             System.out.println("Mediana: " + tab[p]);
-            int sum = 0;
+            int s = 0;
             for(int i = 0; i < tab.length; i++){
-                sum+=tab[i];
+                s+=tab[i];
             }
-            System.out.println("Średnia: " + (sum / tab.length));
+            System.out.println("Średnia: " + (s / tab.length));
 
             int tab1[] = new int[r.nextInt(900) + 100];
             System.out.println("\n");
@@ -32,17 +32,18 @@ class Zadanie4 {
             Arrays.sort(tab1);
             p = tab1.length / 2;
             System.out.println("Mediana: " + tab1[p]);
-            sum = 0;
+            s = 0;
             for(int i = 0; i < tab1.length; i++){
-                sum+=tab1[i];
+                s+=tab1[i];
             }
-            System.out.println("Średnia: " + (sum / tab1.length));
+            System.out.println("Średnia: " + (s / tab1.length));
             System.out.println("----------------------------");
         }
         int f=0;
+        
         System.out.println("\n\nwhile\n");
+        int i = 0;
         while(f<ile){
-            int i=0;
             Random r = new Random();
             int tab[] = new int[2000];
             while(i<tab.length){
@@ -53,15 +54,17 @@ class Zadanie4 {
             Arrays.sort(tab);
             int p = tab.length / 2;
             System.out.println("Mediana: " + tab[p]);
-            int sum = 0;
+            int s = 0;
+            i = 0;
             while(i < tab.length){
-                sum+=tab[i];
+                s+=tab[i];
                 i++;
             }
-            System.out.println("Średnia: " + (sum / tab.length));
+            System.out.println("Średnia: " + (s / tab.length));
 
             int tab1[] = new int[r.nextInt(900) + 100];
             System.out.println("\n");
+            i = 0;
             while(i<tab1.length){
                 int a = r.nextInt(10000)-5000;
                 tab1[i]=a;
@@ -70,12 +73,13 @@ class Zadanie4 {
             Arrays.sort(tab1);
             p = tab1.length / 2;
             System.out.println("Mediana: " + tab1[p]);
-            sum = 0;
+            s = 0;
+            i = 0;
             while(i < tab1.length){
-                sum+=tab1[i];
+                s+=tab1[i];
                 i++;
             }
-            System.out.println("Średnia: " + (sum / tab1.length));
+            System.out.println("Średnia: " + (s / tab1.length));
             System.out.println("----------------------------");
             f++;
         }

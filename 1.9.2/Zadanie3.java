@@ -16,11 +16,11 @@ class Zadanie3 {
             Arrays.sort(tab);
             int p = tab.length / 2;
             System.out.println("Mediana: " + tab[p]);
-            int sum = 0;
+            int s = 0;
             for(int i = 0; i < tab.length; i++){
-                sum+=tab[i];
+                s+=tab[i];
             }
-            System.out.println("Średnia: " + (sum / tab.length));
+            System.out.println("Średnia: " + (s / tab.length));
 
             int tab1[] = new int[r.nextInt(900) + 100];
             System.out.println("\n");
@@ -31,11 +31,11 @@ class Zadanie3 {
             Arrays.sort(tab1);
             p = tab1.length / 2;
             System.out.println("Mediana: " + tab1[p]);
-            sum = 0;
+            s = 0;
             for(int i = 0; i < tab1.length; i++){
-                sum+=tab1[i];
+                s+=tab1[i];
             }
-            System.out.println("Średnia: " + (sum / tab1.length));
+            System.out.println("Średnia: " + (s / tab1.length));
             System.out.println("----------------------------");
         }
     }
