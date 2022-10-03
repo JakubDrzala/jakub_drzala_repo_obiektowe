@@ -1,29 +1,15 @@
+import java.util.List;
+
 public class PersonTools {
-    private int zadanie;
+    public void Inicialy(){
 
-    public PersonTools(int zadanie){
-        this.zadanie = zadanie;
     }
 
-    public int getZadanie() {
-        return zadanie;
+    public void Wyswietlanie(){
+
     }
 
-    public void setZadanie(int zadanie) {
-        this.zadanie = zadanie;
-    }
+    public void Losowanie(){
 
-    public void Person(int zadanie){
-        if(zadanie == 1){
-        }
-        else if(zadanie == 2){
-        }
-        else if(zadanie == 3){
-        }
-        else if(zadanie == 4){
-            System.exit(0);
-        }
-        else{
-        }
     }
 }

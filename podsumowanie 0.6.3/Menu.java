@@ -1,6 +1,4 @@
-public class Menu {
-    @Override
-    
+public class Menu {    
     public String toString() {
         return 
         "1 - wyświetl inicjały" + "\n" +
